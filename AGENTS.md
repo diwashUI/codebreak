@@ -39,3 +39,10 @@ Docs: https://docs.expo.dev/eas/index.md
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
 - Expo Go only includes its bundled native modules. After adding a library with native code, the app needs a development build: `npx expo run:ios|android` locally, or `eas build --profile development`.
 - Prefer recommended Expo modules over third-party libraries, and check your available skills before adding dependencies. Docs: https://docs.expo.dev/versions/latest/index.md
+
+## This project's choices (Oct 2026)
+- Single-screen game: no expo-router installed on purpose. If a second screen
+  (e.g. archive of past codes) is ever added, adopt expo-router then.
+- Persistence uses @react-native-async-storage/async-storage (native module) →
+  testing needs an EAS development build, not plain Expo Go.
+- Tests: vitest for pure logic in lib/ (mirrors the morse-player web project).
