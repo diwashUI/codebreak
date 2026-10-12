@@ -31,7 +31,7 @@ Puzzle
 puzzle, daily puzzle, brain teaser, logic game, code breaker, offline game
 
 ## What's needed from diwash (Play Console)
-- [ ] Feature graphic (1024×500) — required
+- [x] Feature graphic (1024×500) — `assets/feature-graphic.png` ✅
 - [ ] 2+ phone screenshots — take from the dev build
 - [ ] Privacy policy URL — required even though the app collects nothing
       (generate a free one, e.g. via a privacy-policy generator, host on GitHub Pages)
